@@ -50,6 +50,22 @@ This is a [React](https://reactjs.org) + [TypeScript](https://www.typescriptlang
    yarn dev
    ```
 
+## Handling Environment varialbes
+
+```
+VITE_SOME_KEY=123
+DB_PASSWORD=foobar
+```
+
+Only VITE_SOME_KEY will be exposed as import.meta.env.VITE_SOME_KEY to your client source code, but DB_PASSWORD will not.
+
+```
+console.log(import.meta.env.VITE_SOME_KEY) // 123
+console.log(import.meta.env.DB_PASSWORD) // undefined
+```
+
+More information on [Vite Env Variables and Modes](https://vitejs.dev/guide/env-and-mode.html).
+
 ## Recommended VS Code extensions
 
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
