@@ -106,6 +106,12 @@ yarn serve
   yarn test:e2e
   ```
 
+### Commit commands
+
+```
+yarn commit
+```
+
 ## License
 
 This project is licensed under the MIT License.
